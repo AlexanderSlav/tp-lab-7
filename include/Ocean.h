@@ -21,7 +21,7 @@ public:
     void addObjects(Object_Type type, unsigned int objects_amount);
     void run();
     void deleteObjects(Object* obj);
-    void addStuff(Object* obj);
+    void add_stuff(Object* obj);
     Cell* find_nullptr_cells(Pair crd);
     Cell* find_Prey(Pair crd);
 private:

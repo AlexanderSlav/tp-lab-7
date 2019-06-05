@@ -20,10 +20,12 @@ protected:
 public:
     Object(Cell * = nullptr);
     virtual ~Object(){};
-    virtual void live() = 0;
+    virtual bool live() = 0;
     virtual char get_symbol() = 0;
-    void setCell(Cell* cell);
-    void setlive(unsigned int life_time);
+    virtual void reproduction() = 0;
+    virtual void move() = 0;
+    void setCell(Cell* cell); //???
+    void setlife_time(unsigned int life_time);
     Cell* getCell();
     Object_Type get_type();
     unsigned int get_live();

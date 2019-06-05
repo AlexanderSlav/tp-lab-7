@@ -8,6 +8,9 @@
 #include <iostream>
 using namespace std;
 int main(){
-    Cell cell1;
-    cout << cell1.getObject();
+    //Cell cell1;
+    //cout << cell1.getObject();
+    Ocean ocean1;
+    ocean1.print();
+
 }

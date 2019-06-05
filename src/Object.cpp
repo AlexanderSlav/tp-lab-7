@@ -19,7 +19,7 @@ unsigned int Object::get_live()
     return life_time;
 }
 
-void Object::setlive(unsigned int life_time)
+void Object::setlife_time(unsigned int life_time)
 {
     this->life_time = life_time;
 }
@@ -27,4 +27,9 @@ void Object::setlive(unsigned int life_time)
 Object::Object(Cell * cell)
 {
     this->cell = cell;
+}
+
+Cell* Object::getCell()
+{
+    return  this->cell;
 }
