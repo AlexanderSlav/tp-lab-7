@@ -4,9 +4,9 @@
 
 #include "Cell.h"
 
-void Cell::init(Pair p, Ocean *oc)
+void Cell::init(Pair pair_coordinates, Ocean *oc)
 {
-    crd = p;
+    crd = pair_coordinates;
     ocean = oc;
 }
 
@@ -20,4 +20,23 @@ Object* Cell::getObject() const
    if (object) return object;
    else
        return nullptr;
+}
+
+void Cell::killme()
+{
+    if(object)
+    {
+        delete object; // value pointed by this pointer is destroying, pointer to object is not destroying
+        this->object = nullptr;  // set new value to pointer
+    }
+}
+
+Pair Cell::Coordinates()
+{
+    return crd;
+}
+
+Ocean* Cell::getOcean()
+{
+    return ocean;
 }

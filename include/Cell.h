@@ -21,7 +21,7 @@ public:
     void killme();
     Object* getObject() const;
     void init(Pair p, Ocean* oc);
-    Pair Cord();
+    Pair Coordinates();
     Ocean * getOcean();
 
 };
