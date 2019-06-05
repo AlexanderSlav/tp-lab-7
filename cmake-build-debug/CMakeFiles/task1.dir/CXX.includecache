@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Cell.h
+Object.h
+../include/Object.h
+
+../include/Object.h
+
+C:/Education/Shtanuk/tp-lab-7/src/main.cpp
+Object.h
+C:/Education/Shtanuk/tp-lab-7/src/Object.h
+Cell.h
+C:/Education/Shtanuk/tp-lab-7/src/Cell.h
+

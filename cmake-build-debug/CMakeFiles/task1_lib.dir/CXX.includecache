@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Cell.h
+Object.h
+../include/Object.h
+
+../include/Object.h
+
+../include/Ocean.h
+vector
+-
+Cell.h
+../include/Cell.h
+Object.h
+../include/Object.h
+
+../include/Predator.h
+
+../include/Prey.h
+
+../include/Stone.h
+
+C:/Education/Shtanuk/tp-lab-7/src/Ocean.cpp
+Ocean.h
+C:/Education/Shtanuk/tp-lab-7/src/Ocean.h
+
+C:/Education/Shtanuk/tp-lab-7/src/Predator.cpp
+Predator.h
+C:/Education/Shtanuk/tp-lab-7/src/Predator.h
+
+C:/Education/Shtanuk/tp-lab-7/src/Prey.cpp
+Prey.h
+C:/Education/Shtanuk/tp-lab-7/src/Prey.h
+
+C:/Education/Shtanuk/tp-lab-7/src/Stone.cpp
+Stone.h
+C:/Education/Shtanuk/tp-lab-7/src/Stone.h
+
