@@ -4,20 +4,24 @@
 
 #pragma once
 #include "Object.h"
-typedef size_t coord_t;
+#include "Ocean.h"
+#include "common_settings.h"
 class Ocean;
 class Cell{
     friend Ocean;
-public:
-    Cell();
-    void setObject(Object* data);
 
 private:
-    int Cell_X;
-    int Cell_Y;
+    Pair crd;
     Object* object;
     Ocean* ocean;
-
-
+public:
+    explicit Cell(Pair p = { 0, 0 }, Ocean* oc = nullptr):
+    crd(p), object(nullptr), ocean(oc){}
+    void setObject(Object* obj);
+    void killme();
+    Object* getObject() const;
+    void init(Pair p, Ocean* oc);
+    Pair Cord();
+    Ocean * getOcean();
 
 };

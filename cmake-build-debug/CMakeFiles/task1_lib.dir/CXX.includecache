@@ -9,6 +9,10 @@
 ../include/Cell.h
 Object.h
 ../include/Object.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Object.h
 
@@ -20,25 +24,9 @@ Cell.h
 Object.h
 ../include/Object.h
 
-../include/Predator.h
+../include/common_settings.h
 
-../include/Prey.h
-
-../include/Stone.h
-
-C:/Education/Shtanuk/tp-lab-7/src/Ocean.cpp
-Ocean.h
-C:/Education/Shtanuk/tp-lab-7/src/Ocean.h
-
-C:/Education/Shtanuk/tp-lab-7/src/Predator.cpp
-Predator.h
-C:/Education/Shtanuk/tp-lab-7/src/Predator.h
-
-C:/Education/Shtanuk/tp-lab-7/src/Prey.cpp
-Prey.h
-C:/Education/Shtanuk/tp-lab-7/src/Prey.h
-
-C:/Education/Shtanuk/tp-lab-7/src/Stone.cpp
-Stone.h
-C:/Education/Shtanuk/tp-lab-7/src/Stone.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.cpp
+Cell.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.h
 

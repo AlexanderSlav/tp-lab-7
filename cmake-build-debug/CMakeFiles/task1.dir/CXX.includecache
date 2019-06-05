@@ -9,12 +9,28 @@
 ../include/Cell.h
 Object.h
 ../include/Object.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Object.h
 
-C:/Education/Shtanuk/tp-lab-7/src/main.cpp
-Object.h
-C:/Education/Shtanuk/tp-lab-7/src/Object.h
+../include/Ocean.h
+vector
+-
 Cell.h
-C:/Education/Shtanuk/tp-lab-7/src/Cell.h
+../include/Cell.h
+Object.h
+../include/Object.h
+
+../include/common_settings.h
+
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/main.cpp
+Object.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
+Cell.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.h
+iostream
+-
 

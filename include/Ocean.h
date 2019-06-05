@@ -11,7 +11,7 @@ class Ocean{
 public:
     Ocean();
 private:
-    Cell** cells;
+    //Cell** cells;
     vector<Object*> predators;
     vector<Object*> preys;
     vector<Object*> stones;
