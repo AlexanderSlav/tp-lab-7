@@ -9,10 +9,6 @@ Object_Type Object::get_type()
     return type_obj;
 }
 
-void Object::setCell(Cell *cell)
-{
-    this->cell =cell;
-}
 
 unsigned int Object::get_live()
 {

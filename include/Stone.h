@@ -1,8 +1,18 @@
 //
 // Created by Alexander on 27.04.2019.
 //
+#pragma once
 
-#ifndef TASK1_STONE_H
-#define TASK1_STONE_H
+#include "Object.h"
+#include "Cell.h"
+#include "Ocean.h"
+#include "common_settings.h"
 
-#endif //TASK1_STONE_H
+
+class Stone: public Object{
+public:
+    Stone(Cell* cell);
+    ~Stone(){};
+    bool live () override;
+    char get_symbol() override;
+};

@@ -21,4 +21,5 @@ const size_t M = 50;
 const int Life_Time_Prey = 15;
 const int Life_Time_Predator = 20;
 const int Life_Time_Stone = 1000;
+const int Its_time_to_eat = 50;
 

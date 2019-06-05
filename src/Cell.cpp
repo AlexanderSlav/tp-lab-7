@@ -40,3 +40,13 @@ Ocean* Cell::getOcean()
 {
     return ocean;
 }
+
+Cell* Cell::find_prey()
+{
+    return ocean->find_Prey(crd);
+}
+
+Cell* Cell::empty_cell_neighbor()
+{
+    return ocean->find_nullptr_cells(crd);
+}

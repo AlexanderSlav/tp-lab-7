@@ -5,6 +5,9 @@
 #include "Ocean.h"
 #include "Stone.h"
 #include "Object.h"
+#include "Prey.h"
+
+using  namespace std;
 
 Ocean::Ocean()
 {
@@ -58,21 +61,25 @@ void Ocean::add_stuff(Object *obj)
 void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
 {
     srand(time(NULL));
-    while(objects_amount > 0)
+    for (int i(0); i < objects_amount;)
     {
         unsigned  int x = rand() % M;
         unsigned  int y = rand() % N;
         if (cells[y][x].getObject())
             continue;
-        else
-            {
-                Object* new_object = nullptr;
-                switch (type)
-                {
-                    case Object_Type::Prey:
-                        new_object = new Prey(&cells[y][x]);
-                }
-            }
+        Object* new_object = nullptr;
+        switch (type)
+        {
+            case Object_Type::Prey:
+                new_object = new  Prey(&cells[y][x]);
+                break;
+            case Object_Type::Predator:
+                new_object = new Predator(&cells[y][x]);
+                break;
+            case Object_Type::Stone:
+                new_object = new Stone(&cells[y][x]);
+                break;
+        }
 
     }
 
@@ -101,7 +108,7 @@ Cell* Ocean::find_nullptr_cells(Pair crd)
 }
 
 
-Cell* Ocean::find_Prey(Pair crd)
+Cell* Ocean::find_prey(Pair crd)
 {
     srand(time(NULL));
     for(int i(0); i < 8; ++i)

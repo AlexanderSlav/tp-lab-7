@@ -5,7 +5,7 @@
 #include "Prey.h"
 #include <iostream>
 
-Prey::Prey(Cell * c):Object(c)
+Prey::Prey(Cell * cell):Object(cell)
 {
     life_time = Life_Time_Prey;
     type_obj = Object_Type::Prey;
@@ -47,7 +47,7 @@ bool Prey::live()
     if (!life_time)
         return false;
     move();
-    if (life_time < 5)
+    if (life_time < 0.4 * Life_Time_Prey)
     {
         reproduction();
     }

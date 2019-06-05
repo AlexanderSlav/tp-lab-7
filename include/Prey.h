@@ -16,7 +16,7 @@ class Prey: public Object{
     friend  Cell;
     friend Ocean;
 public:
-    Prey(Cell* cell);
+    explicit Prey(Cell* cell);
     ~Prey(){};
     bool live () override;
     char get_symbol() override;

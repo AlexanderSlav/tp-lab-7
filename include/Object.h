@@ -8,8 +8,7 @@
 #define  Stone_symbol '#'
 #define  Prey_symbol 'f'
 #define  Predator_symbol 'S'
-#define  Coral_symbol '*'
-enum Object_Type {Prey, Predator, Stone, Coral};
+enum Object_Type {Prey, Predator, Stone};
 class Ocean;
 class Cell;
 class Object{
@@ -18,13 +17,12 @@ protected:
     unsigned int life_time;
     Object_Type type_obj;
 public:
-    Object(Cell * = nullptr);
+    Object(Cell * c = nullptr);
     virtual ~Object(){};
     virtual bool live() = 0;
     virtual char get_symbol() = 0;
     virtual void reproduction() = 0;
     virtual void move() = 0;
-    void setCell(Cell* cell); //???
     void setlife_time(unsigned int life_time);
     Cell* getCell();
     Object_Type get_type();

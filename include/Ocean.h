@@ -14,6 +14,8 @@
 using namespace std;
 class Ocean{
     friend Cell;
+    friend Stone;
+    friend Predator;
 public:
     Ocean();
     ~Ocean();
@@ -23,7 +25,7 @@ public:
     void deleteObjects(Object* obj);
     void add_stuff(Object* obj);
     Cell* find_nullptr_cells(Pair crd);
-    Cell* find_Prey(Pair crd);
+    Cell* find_prey(Pair crd);
 private:
     Cell** cells;
     list <Object*> stuff;

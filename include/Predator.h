@@ -25,5 +25,5 @@ public:
     bool to_have_a_breakfast();
 
 private:
-    int am_i_hungry = 0; // the satiety of the predator in percents
+    int am_i_hungry = 20; // the satiety of the predator in percents
 };
