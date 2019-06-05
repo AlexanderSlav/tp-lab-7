@@ -5,5 +5,8 @@ CMakeFiles/task1.dir/src/main.cpp.o
  ../include/Cell.h
  ../include/Object.h
  ../include/Ocean.h
+ ../include/Predator.h
+ ../include/Prey.h
+ ../include/Stone.h
  ../include/common_settings.h
  /Users/AlexSlav/Shtanuk/tp-lab-7/src/main.cpp

@@ -3,3 +3,27 @@
 //
 
 #pragma once
+#include "Object.h"
+#include "Cell.h"
+#include "Ocean.h"
+#include "common_settings.h"
+
+class Cell;
+class Ocean;
+class Object;
+
+class Predator: public Object{
+    friend  Cell;
+    friend Ocean;
+public:
+    Predator(Cell* cell);
+    ~Predator(){};
+    bool live () override;
+    char get_symbol() override;
+    void reproduction() override;
+    void move() override;
+    bool to_have_a_breakfast();
+
+private:
+    int am_i_hungry = 0; // the satiety of the predator in percents
+};

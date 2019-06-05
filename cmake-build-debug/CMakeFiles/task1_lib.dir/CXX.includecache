@@ -15,18 +15,50 @@ common_settings.h
 ../include/common_settings.h
 
 ../include/Object.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Ocean.h
 vector
 -
 Cell.h
 ../include/Cell.h
+Predator.h
+../include/Predator.h
+Stone.h
+../include/Stone.h
+Prey.h
+../include/Prey.h
+common_settings.h
+../include/common_settings.h
 Object.h
 ../include/Object.h
+list
+-
+
+../include/Predator.h
+
+../include/Prey.h
+
+../include/Stone.h
 
 ../include/common_settings.h
+iostream
+-
 
 /Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.cpp
 Cell.h
 /Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.h
+
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.cpp
+Object.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
+
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.cpp
+Ocean.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.h
+Stone.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Stone.h
+Object.h
+/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
 

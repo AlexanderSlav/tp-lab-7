@@ -48,10 +48,12 @@ void Ocean::print() const
     }
 }
 
-void Ocean::run()
-{
 
+void Ocean::add_stuff(Object *obj)
+{
+    stuff.push_back(obj);
 }
+
 
 void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
 {
@@ -75,4 +77,55 @@ void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
     }
 
 
+}
+
+
+void Ocean::deleteObjects(Object *obj)
+{
+        obj->getCell()->killme();
+}
+
+
+Cell* Ocean::find_nullptr_cells(Pair crd)
+{
+    for (int i(0);i < 8; ++i)
+    {
+        size_t new_x = crd.x + rand() % 3 - 1;
+        size_t new_y = crd.y + rand() % 3 - 1;
+        if (new_x < N && new_y < M)
+            if (cells[new_x][new_y].getObject() == nullptr)
+                return &cells[new_x][new_y];
+
+    }
+    return nullptr;
+}
+
+
+Cell* Ocean::find_Prey(Pair crd)
+{
+    srand(time(NULL));
+    for(int i(0); i < 8; ++i)
+    {
+        size_t new_x = crd.x + rand() % 3 - 1;
+        size_t new_y = crd.y + rand() % 3 - 1;
+        if (new_x < N && new_y < M)
+            if (cells[new_x][new_y].getObject() && cells[new_x][new_y].getObject()->get_type() == Object_Type::Prey)
+                return &cells[new_x][new_y];
+
+    }
+    return nullptr;
+}
+
+
+void Ocean::run()
+{
+    for(auto i(stuff.begin()); i != stuff.end();++i)
+    {
+        if ((*i)-> live() == false)
+        {
+            deleteObjects(*i);
+            stuff.erase(i++);
+
+        }
+    }
 }

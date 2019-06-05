@@ -5,15 +5,22 @@ CMakeFiles/task1_lib.dir/src/Cell.cpp.o
  ../include/Cell.h
  ../include/Object.h
  ../include/Ocean.h
+ ../include/Predator.h
+ ../include/Prey.h
+ ../include/Stone.h
  ../include/common_settings.h
  /Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.cpp
 CMakeFiles/task1_lib.dir/src/Object.cpp.o
  ../include/Object.h
+ ../include/common_settings.h
  /Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.cpp
 CMakeFiles/task1_lib.dir/src/Ocean.cpp.o
  ../include/Cell.h
  ../include/Object.h
  ../include/Ocean.h
+ ../include/Predator.h
+ ../include/Prey.h
+ ../include/Stone.h
  ../include/common_settings.h
  /Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.cpp
 CMakeFiles/task1_lib.dir/src/Predator.cpp.o

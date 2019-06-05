@@ -23,5 +23,7 @@ public:
     void init(Pair p, Ocean* oc);
     Pair Coordinates();
     Ocean * getOcean();
+    Cell* empty_cell_neighbor();
+    Cell* find_prey();
 
 };

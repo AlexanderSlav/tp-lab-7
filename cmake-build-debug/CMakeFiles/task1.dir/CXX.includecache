@@ -15,16 +15,36 @@ common_settings.h
 ../include/common_settings.h
 
 ../include/Object.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Ocean.h
 vector
 -
 Cell.h
 ../include/Cell.h
+Predator.h
+../include/Predator.h
+Stone.h
+../include/Stone.h
+Prey.h
+../include/Prey.h
+common_settings.h
+../include/common_settings.h
 Object.h
 ../include/Object.h
+list
+-
+
+../include/Predator.h
+
+../include/Prey.h
+
+../include/Stone.h
 
 ../include/common_settings.h
+iostream
+-
 
 /Users/AlexSlav/Shtanuk/tp-lab-7/src/main.cpp
 Object.h

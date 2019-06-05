@@ -4,6 +4,9 @@
 CMakeFiles/task1.dir/src/main.cpp.o: ../include/Cell.h
 CMakeFiles/task1.dir/src/main.cpp.o: ../include/Object.h
 CMakeFiles/task1.dir/src/main.cpp.o: ../include/Ocean.h
+CMakeFiles/task1.dir/src/main.cpp.o: ../include/Predator.h
+CMakeFiles/task1.dir/src/main.cpp.o: ../include/Prey.h
+CMakeFiles/task1.dir/src/main.cpp.o: ../include/Stone.h
 CMakeFiles/task1.dir/src/main.cpp.o: ../include/common_settings.h
 CMakeFiles/task1.dir/src/main.cpp.o: ../src/main.cpp
 
