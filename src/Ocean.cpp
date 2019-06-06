@@ -70,13 +70,13 @@ void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
         Object* new_object = nullptr;
         switch (type)
         {
-            case Object_Type::Prey:
+            case Object_Type::prey:
                 new_object = new  Prey(&cells[y][x]);
                 break;
-            case Object_Type::Predator:
+            case Object_Type::predator:
                 new_object = new Predator(&cells[y][x]);
                 break;
-            case Object_Type::Stone:
+            case Object_Type::stone:
                 new_object = new Stone(&cells[y][x]);
                 break;
         }
@@ -116,7 +116,7 @@ Cell* Ocean::find_prey(Pair crd)
         size_t new_x = crd.x + rand() % 3 - 1;
         size_t new_y = crd.y + rand() % 3 - 1;
         if (new_x < N && new_y < M)
-            if (cells[new_x][new_y].getObject() && cells[new_x][new_y].getObject()->get_type() == Object_Type::Prey)
+            if (cells[new_x][new_y].getObject() && cells[new_x][new_y].getObject()->get_type() == Object_Type::prey)
                 return &cells[new_x][new_y];
 
     }

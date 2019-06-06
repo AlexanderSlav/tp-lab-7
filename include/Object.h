@@ -8,7 +8,7 @@
 #define  Stone_symbol '#'
 #define  Prey_symbol 'f'
 #define  Predator_symbol 'S'
-enum Object_Type {Prey, Predator, Stone};
+enum Object_Type {prey, predator, stone};
 class Ocean;
 class Cell;
 class Object{
@@ -18,7 +18,7 @@ protected:
     Object_Type type_obj;
 public:
     Object(Cell * c = nullptr);
-    virtual ~Object(){};
+    virtual ~Object() = default;
     virtual bool live() = 0;
     virtual char get_symbol() = 0;
     virtual void reproduction() = 0;

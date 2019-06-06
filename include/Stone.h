@@ -11,8 +11,9 @@
 
 class Stone: public Object{
 public:
-    Stone(Cell* cell);
-    ~Stone(){};
+    explicit Stone(Cell* cell);
+    ~Stone() override = default;
     bool live () override;
     char get_symbol() override;
+    unsigned int get_size();
 };

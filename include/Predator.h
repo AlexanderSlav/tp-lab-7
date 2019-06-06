@@ -12,12 +12,13 @@ class Cell;
 class Ocean;
 class Object;
 
-class Predator: public Object{
+class Predator: public Object
+        {
     friend  Cell;
     friend Ocean;
 public:
-    Predator(Cell* cell);
-    ~Predator(){};
+    explicit Predator(Cell* cell);
+    ~Predator() override = default ;
     bool live () override;
     char get_symbol() override;
     void reproduction() override;

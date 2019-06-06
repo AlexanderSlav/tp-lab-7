@@ -9,7 +9,7 @@
 Stone::Stone(Cell *cell)
 {
     life_time = Life_Time_Stone;
-    type_obj = Object_Type::Stone;
+    type_obj = Object_Type::stone;
 }
 
 char Stone::get_symbol()
@@ -21,7 +21,12 @@ bool Stone::live()
 {
     if (life_time == 0)
         return false;
+
     life_time--;
     return true;
 
+}
+unsigned  int Stone::get_size()
+{
+    return 15;
 }
