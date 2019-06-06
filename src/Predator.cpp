@@ -32,23 +32,22 @@ char Predator::get_symbol()
 
 bool Predator::live()
 {
-    srand(time(NULL));
-    am_i_hungry += 10;
-    if (!life_time || life_time < 0 )
+    //am_i_hungry += 10;
+    if (life_time == 0 || life_time < 0 )
         return false;
+    /*
     if (am_i_hungry >= Its_time_to_eat)
     {
         if (to_have_a_breakfast())
-            am_i_hungry = am_i_hungry - rand() % Its_time_to_eat + 20;
+            am_i_hungry = am_i_hungry - 30;
         else
             life_time--;
-    }
+    }*/
     move();
-    if (life_time < 0.3 * Life_Time_Predator && am_i_hungry < 50)
+    if (life_time < 0.5 * Life_Time_Predator && to_have_a_breakfast())
     {
         reproduction();
     }
-
     life_time--;
     return true;
 

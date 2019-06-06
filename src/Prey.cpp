@@ -27,8 +27,8 @@ void Prey::move()
 void Prey::reproduction()
 {
     Cell* new_cell = cell->empty_cell_neighbor();
-    Cell * predator_danger = cell->find_
-    if (new_cell != nullptr)
+    Cell * predator_danger = cell->find_predator();
+    if (new_cell != nullptr && predator_danger == nullptr)
     {
         auto* child = new Prey(new_cell);
         new_cell -> setObject(child);
@@ -48,7 +48,7 @@ bool Prey::live()
     if (!life_time)
         return false;
     move();
-    if (life_time < 0.4 * Life_Time_Prey)
+    if (life_time < 0.3 * Life_Time_Prey)
     {
         reproduction();
     }

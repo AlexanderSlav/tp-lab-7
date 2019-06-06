@@ -10,23 +10,21 @@
 using namespace std;
 int main(){
     Ocean * ocean1 = new Ocean;
-    ocean1->addObjects(Object_Type::prey,50);
-    ocean1->addObjects(Object_Type::predator,30);
+    ocean1->addObjects(Object_Type::prey,200);
+    ocean1->addObjects(Object_Type::predator,200);
     ocean1->addObjects(Object_Type::stone,0);
     ocean1->write_results_to_file(ocean1->get_prey_amount(),ocean1->get_predator_amount(),
-            ocean1->get_stone_amount(),"Start");
+            ocean1->get_stone_amount(),0);
     std::cout << "\n\n" << std::endl;
-    unsigned  int thelastit = 0;
-    for (int i(0); i < 100; i++)
+    for (unsigned int i(0); i < 100; i++)
     {
         ocean1->run();
         cout << "\n\n" << std::endl;
         ocean1->print();
-        thelastit = i;
+        if (i % 10)
+            ocean1->write_results_to_file(ocean1->get_prey_amount(),ocean1->get_predator_amount(),
+                                          ocean1->get_stone_amount(),i);
     }
-    cout << thelastit;
-    ocean1->write_results_to_file(ocean1->get_prey_amount(),ocean1->get_predator_amount(),
-                                  ocean1->get_stone_amount(),"End");
 /*
     "The amount of Preys : " << prey_amount << endl;
     stream<<"The amount of Predators : " << predator_amount << endl;

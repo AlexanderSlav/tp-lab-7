@@ -193,26 +193,21 @@ unsigned int Ocean::get_predator_amount()
 
 }
 
-void Ocean::write_results_to_file(unsigned int am1, unsigned int am2 , unsigned int am3, string flag)
+void Ocean::write_results_to_file(unsigned int am1, unsigned int am2 , unsigned int am3, unsigned int it)
 {
     ofstream output_file;
+    ofstream output_file_graph;
     output_file.open("C:/Education/Shtanuk/tp-lab-7/info_about_objects/objects_amount.txt",ios::app);
-    if (output_file.is_open())
+    output_file_graph.open("C:/Education/Shtanuk/tp-lab-7/info_about_objects/for_graph.txt",ios::app);
+    if (output_file.is_open() && output_file_graph.is_open())
     {
-        if (flag == "Start")
-        {
-            output_file << "The start amount of Preys is : " << am1 << endl;
-            output_file << "The start amount of Predators is : " << am2 << endl;
-            output_file << "The start amount of Stones is : " << am3 << endl;
-        } else if (flag == "End")
-        {
-            output_file << "The final amount of Preys is : " << am1 << endl;
-            output_file << "The final amount of Predators is : " << am2 << endl;
-            output_file << "The final amount of Stones is : " << am3 << endl;
 
-        }
-        else
-            cout << "Error! Stage should be Start or End!";
+        output_file << "The amount of Preys is : " << am1 << " the iteration = "<< it << endl;
+        output_file << "The amount of Predators is : " << am2 <<" the iteration = "<< it << endl;
+        output_file << "The amount of Stones is : " << am3 << " the iteration = "<< it << endl;
+        output_file_graph  << am1 << ':' <<  am2 << ':' << am3 << ':' << it<< ':';
+
+
     } else
         cout << "Cannot find such file";
 }

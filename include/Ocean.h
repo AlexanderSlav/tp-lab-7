@@ -30,7 +30,7 @@ public:
     unsigned int get_prey_amount();
     unsigned int get_stone_amount();
     unsigned int get_predator_amount();
-    void write_results_to_file(unsigned int amount1,unsigned int amount2,unsigned int amount3, string flag);
+    void write_results_to_file(unsigned int amount1,unsigned int amount2,unsigned int amount3, unsigned int iteration);
 
 private:
     Cell** cells;

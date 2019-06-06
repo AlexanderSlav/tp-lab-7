@@ -19,8 +19,8 @@ struct Pair
 const size_t N = 20;
 const size_t M = 50;
 
-const int Life_Time_Prey = 20;
-const int Life_Time_Predator = 25;
+const int Life_Time_Prey = 10;
+const int Life_Time_Predator = 20;
 const int Life_Time_Stone = 1000;
 const int Its_time_to_eat = 50;
 
