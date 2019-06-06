@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/task1_lib.dir/src/Ocean.cpp.o"
-  "CMakeFiles/task1_lib.dir/src/Stone.cpp.o"
-  "CMakeFiles/task1_lib.dir/src/Prey.cpp.o"
-  "CMakeFiles/task1_lib.dir/src/Predator.cpp.o"
-  "CMakeFiles/task1_lib.dir/src/Object.cpp.o"
-  "CMakeFiles/task1_lib.dir/src/Cell.cpp.o"
+  "CMakeFiles/task1_lib.dir/src/Ocean.cpp.obj"
+  "CMakeFiles/task1_lib.dir/src/Stone.cpp.obj"
+  "CMakeFiles/task1_lib.dir/src/Prey.cpp.obj"
+  "CMakeFiles/task1_lib.dir/src/Predator.cpp.obj"
+  "CMakeFiles/task1_lib.dir/src/Object.cpp.obj"
+  "CMakeFiles/task1_lib.dir/src/Cell.cpp.obj"
   "libtask1_lib.pdb"
   "libtask1_lib.a"
 )

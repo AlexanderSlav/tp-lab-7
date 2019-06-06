@@ -35,30 +35,48 @@ Object.h
 ../include/Object.h
 list
 -
+fstream
+-
 
 ../include/Predator.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Prey.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Stone.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/common_settings.h
 iostream
 -
+time.h
+-
 
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.cpp
-Cell.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.h
-
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.cpp
-Object.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
-
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.cpp
-Ocean.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.h
-Stone.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Stone.h
-Object.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
+C:/Education/Shtanuk/tp-lab-7/src/Predator.cpp
+Predator.h
+C:/Education/Shtanuk/tp-lab-7/src/Predator.h
+iostream
+-
 

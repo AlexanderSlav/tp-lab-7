@@ -9,7 +9,6 @@
 class Ocean;
 class Cell{
     friend Ocean;
-
 private:
     Pair crd;
     Object* object;
@@ -21,9 +20,9 @@ public:
     void killme();
     Object* getObject() const;
     void init(Pair p, Ocean* oc);
-    Pair Coordinates();
     Ocean * getOcean();
     Cell* empty_cell_neighbor();
     Cell* find_prey();
+    Cell* find_predator();
 
 };

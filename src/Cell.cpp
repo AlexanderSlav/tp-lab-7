@@ -12,14 +12,12 @@ void Cell::init(Pair pair_coordinates, Ocean *oc)
 
 void Cell::setObject(Object * obj)
 {
-    this->object = obj;
+    object = obj;
 }
 
 Object* Cell::getObject() const
 {
-   if (object) return object;
-   else
-       return nullptr;
+    return object;
 }
 
 void Cell::killme()
@@ -27,23 +25,22 @@ void Cell::killme()
     if(object)
     {
         delete object; // value pointed by this pointer is destroying, pointer to object is not destroying
-        this->object = nullptr;  // set new value to pointer
+        object = nullptr;  // set new value to pointer
     }
 }
 
-Pair Cell::Coordinates()
-{
-    return crd;
-}
-
-Ocean* Cell::getOcean()
+Ocean* Cell::getOcean ()
 {
     return ocean;
 }
 
 Cell* Cell::find_prey()
 {
-    return ocean->find_Prey(crd);
+    return ocean->find_prey(crd);
+}
+
+Cell* Cell::find_predator(){
+    return ocean->find_predator(crd);
 }
 
 Cell* Cell::empty_cell_neighbor()

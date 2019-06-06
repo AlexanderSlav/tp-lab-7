@@ -15,5 +15,6 @@ public:
     ~Stone() override = default;
     bool live () override;
     char get_symbol() override;
-    unsigned int get_size();
+    void reproduction() override;
+    void move() override;
 };

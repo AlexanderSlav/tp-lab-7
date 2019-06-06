@@ -1,4 +1,4 @@
-/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1.dir
-/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir
+C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1.dir
+C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir
+C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

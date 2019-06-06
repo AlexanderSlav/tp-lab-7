@@ -7,6 +7,9 @@
 #include "Object.h"
 #include "Prey.h"
 
+
+
+
 using  namespace std;
 
 Ocean::Ocean()
@@ -27,9 +30,8 @@ Ocean::Ocean()
 Ocean::~Ocean()
 {
     for(size_t i(0); i < N; ++i)
-    {
         delete[]cells[i];
-    }
+    delete[] cells;
     for(auto stuffs:stuff)
     {
         delete stuffs;
@@ -61,7 +63,7 @@ void Ocean::add_stuff(Object *obj)
 void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
 {
     srand(time(NULL));
-    for (int i(0); i < objects_amount;)
+    for (unsigned int  i(0); i < objects_amount;)
     {
         unsigned  int x = rand() % M;
         unsigned  int y = rand() % N;
@@ -72,14 +74,22 @@ void Ocean::addObjects(Object_Type type, unsigned int objects_amount)
         {
             case Object_Type::prey:
                 new_object = new  Prey(&cells[y][x]);
+                //new_object->getCell()->setObject(new_object);
                 break;
             case Object_Type::predator:
                 new_object = new Predator(&cells[y][x]);
+                //new_object->getCell()->setObject(new_object);
                 break;
             case Object_Type::stone:
                 new_object = new Stone(&cells[y][x]);
+                //new_object->getCell()->setObject(new_object);
+                break;
+            default:
                 break;
         }
+        cells[y][x].setObject(new_object);
+        stuff.push_back(new_object);
+        i++;
 
     }
 
@@ -122,6 +132,91 @@ Cell* Ocean::find_prey(Pair crd)
     }
     return nullptr;
 }
+
+
+
+Cell* Ocean::find_predator(Pair crd)
+{
+    srand(time(NULL));
+    for(int i(0); i < 8; ++i)
+    {
+        size_t new_x = crd.x + rand() % 3 - 1;
+        size_t new_y = crd.y + rand() % 3 - 1;
+        if (new_x < N && new_y < M)
+            if (cells[new_x][new_y].getObject() && cells[new_x][new_y].getObject()->get_type() == Object_Type::predator)
+                return &cells[new_x][new_y];
+
+    }
+    return nullptr;
+}
+
+
+unsigned int Ocean::get_prey_amount()
+{
+    unsigned int prey_amount = 0;
+    for(auto i(stuff.begin()); i != stuff.end(); ++i)
+    {
+        if ((*i)->get_type() == Object_Type::prey)
+        {
+           prey_amount++;}
+
+    }
+        return prey_amount;
+
+}
+
+unsigned int Ocean::get_stone_amount()
+{
+    unsigned int stone_amount = 0;
+    for(auto i(stuff.begin()); i != stuff.end(); ++i)
+    {
+        if ((*i)->get_type() == Object_Type::stone)
+        {
+            stone_amount++;}
+
+    }
+    return stone_amount;
+
+}
+
+unsigned int Ocean::get_predator_amount()
+{
+    unsigned int predator_amount = 0;
+    for(auto i(stuff.begin()); i != stuff.end(); ++i)
+    {
+        if ((*i)->get_type() == Object_Type::predator)
+        {
+            predator_amount++;}
+
+    }
+    return predator_amount;
+
+}
+
+void Ocean::write_results_to_file(unsigned int am1, unsigned int am2 , unsigned int am3, string flag)
+{
+    ofstream output_file;
+    output_file.open("C:/Education/Shtanuk/tp-lab-7/info_about_objects/objects_amount.txt",ios::app);
+    if (output_file.is_open())
+    {
+        if (flag == "Start")
+        {
+            output_file << "The start amount of Preys is : " << am1 << endl;
+            output_file << "The start amount of Predators is : " << am2 << endl;
+            output_file << "The start amount of Stones is : " << am3 << endl;
+        } else if (flag == "End")
+        {
+            output_file << "The final amount of Preys is : " << am1 << endl;
+            output_file << "The final amount of Predators is : " << am2 << endl;
+            output_file << "The final amount of Stones is : " << am3 << endl;
+
+        }
+        else
+            cout << "Error! Stage should be Start or End!";
+    } else
+        cout << "Cannot find such file";
+}
+
 
 
 void Ocean::run()

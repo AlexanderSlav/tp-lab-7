@@ -8,7 +8,7 @@
 Prey::Prey(Cell * cell):Object(cell)
 {
     life_time = Life_Time_Prey;
-    type_obj = Object_Type::Prey;
+    type_obj = Object_Type::prey;
 
 }
 
@@ -27,6 +27,7 @@ void Prey::move()
 void Prey::reproduction()
 {
     Cell* new_cell = cell->empty_cell_neighbor();
+    Cell * predator_danger = cell->find_
     if (new_cell != nullptr)
     {
         auto* child = new Prey(new_cell);

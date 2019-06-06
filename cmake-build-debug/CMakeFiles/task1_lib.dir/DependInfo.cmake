@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Cell.cpp.o"
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Object.cpp.o"
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Ocean.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Ocean.cpp.o"
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Predator.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Predator.cpp.o"
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Prey.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Prey.cpp.o"
-  "/Users/AlexSlav/Shtanuk/tp-lab-7/src/Stone.cpp" "/Users/AlexSlav/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Stone.cpp.o"
+  "C:/Education/Shtanuk/tp-lab-7/src/Cell.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Cell.cpp.obj"
+  "C:/Education/Shtanuk/tp-lab-7/src/Object.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Object.cpp.obj"
+  "C:/Education/Shtanuk/tp-lab-7/src/Ocean.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Ocean.cpp.obj"
+  "C:/Education/Shtanuk/tp-lab-7/src/Predator.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Predator.cpp.obj"
+  "C:/Education/Shtanuk/tp-lab-7/src/Prey.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Prey.cpp.obj"
+  "C:/Education/Shtanuk/tp-lab-7/src/Stone.cpp" "C:/Education/Shtanuk/tp-lab-7/cmake-build-debug/CMakeFiles/task1_lib.dir/src/Stone.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

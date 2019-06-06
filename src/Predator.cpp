@@ -9,7 +9,7 @@
 Predator::Predator(Cell * c):Object(c)
 {
     life_time = Life_Time_Predator;
-    type_obj = Object_Type::Predator;
+    type_obj = Object_Type::predator;
 
 }
 
@@ -33,24 +33,23 @@ char Predator::get_symbol()
 bool Predator::live()
 {
     srand(time(NULL));
-    if (!life_time)
+    am_i_hungry += 10;
+    if (!life_time || life_time < 0 )
         return false;
     if (am_i_hungry >= Its_time_to_eat)
     {
         if (to_have_a_breakfast())
-            am_i_hungry = am_i_hungry + rand() % Its_time_to_eat + 20;
+            am_i_hungry = am_i_hungry - rand() % Its_time_to_eat + 20;
         else
             life_time--;
     }
     move();
-    if (life_time < 0.2 * Life_Time_Predator)
+    if (life_time < 0.3 * Life_Time_Predator && am_i_hungry < 50)
     {
         reproduction();
     }
-    if (life_time - 1 >= 0 )
-        life_time--;
-    else
-        return false;
+
+    life_time--;
     return true;
 
 }

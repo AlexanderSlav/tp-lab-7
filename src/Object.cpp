@@ -15,17 +15,16 @@ unsigned int Object::get_live()
     return life_time;
 }
 
-void Object::setlife_time(unsigned int life_time)
+void Object::setlife_time(unsigned int life_t)
 {
-    this->life_time = life_time;
+    life_time = life_t;
 }
 
-Object::Object(Cell * cell)
+Object::Object(Cell * c):cell(c)
 {
-    this->cell = cell;
 }
 
 Cell* Object::getCell()
 {
-    return  this->cell;
+    return  cell;
 }

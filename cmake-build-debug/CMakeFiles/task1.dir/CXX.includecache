@@ -35,22 +35,52 @@ Object.h
 ../include/Object.h
 list
 -
+fstream
+-
 
 ../include/Predator.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Prey.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/Stone.h
+Object.h
+../include/Object.h
+Cell.h
+../include/Cell.h
+Ocean.h
+../include/Ocean.h
+common_settings.h
+../include/common_settings.h
 
 ../include/common_settings.h
 iostream
 -
+time.h
+-
 
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/main.cpp
+C:/Education/Shtanuk/tp-lab-7/src/main.cpp
 Object.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Object.h
+C:/Education/Shtanuk/tp-lab-7/src/Object.h
 Cell.h
-/Users/AlexSlav/Shtanuk/tp-lab-7/src/Cell.h
+C:/Education/Shtanuk/tp-lab-7/src/Cell.h
 iostream
+-
+fstream
 -
 

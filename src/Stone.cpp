@@ -26,7 +26,13 @@ bool Stone::live()
     return true;
 
 }
-unsigned  int Stone::get_size()
+
+void Stone::move()
 {
-    return 15;
+
+}
+
+void Stone::reproduction()
+{
+
 }
